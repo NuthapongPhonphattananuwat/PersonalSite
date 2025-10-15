@@ -1,0 +1,72 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.btn,
+.nav-item {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+#main-nav {
+  height: 0px;
+}
+
+#home,
+#about,
+#contact {
+  min-height: 100vh;
+}
+
+#home,
+#about,
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.profile-image-capped {
+  max-width: 400px;
+  max-height: 400px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.nav-link {
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .profile-image-capped {
+    max-width: 100%;
+    max-height: none;
+    aspect-ratio: 3 / 4;
+    aspect-ratio: cover;
+  }
+}
