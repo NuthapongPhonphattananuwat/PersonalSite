@@ -1,5 +1,6 @@
 html {
-  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+overflow-x: hidden;
 }
 
 h1,
@@ -15,17 +16,9 @@ p {
   font-style: normal;
 }
 
-.btn,
-.nav-item {
-  font-family: "Nunito Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings: "wdth" 100, "YTLC" 500;
-}
-
-#main-nav {
-  height: 0px;
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 #home,
@@ -56,6 +49,14 @@ p {
   max-height: 400px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+}
+
+.btn {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
 }
 
 .nav-link {
