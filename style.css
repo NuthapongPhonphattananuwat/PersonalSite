@@ -3,7 +3,7 @@
 /* ================================== */
 
 html {
-  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -36,20 +36,19 @@ h6,
 /* Layout
 /* ================================== */
 
-section,
-header {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
-
-/* Reusable class for full-height sections */
-.full-section {
+/* Use this ONLY for the #home section */
+.section-hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Add position: relative so in-page elements can be positioned */
   position: relative;
+}
+
+/* Use this for all other sections for consistent padding */
+.section-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 /* ================================== */
@@ -63,9 +62,29 @@ header {
   object-fit: cover;
 }
 
-/* Simple Bootstrap override for nav links */
-.nav-link {
-  color: white;
+.project-image {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.download-button {
+  aspect-ratio: 2.5 / 1;
+  object-fit: cover;
+  width: 100px;
+  border-radius: 0.5rem;
+}
+
+.store-badge {
+  height: 40px;
+  width: auto;
+  /* Add a little transition for a nice hover effect */
+  transition: opacity 0.2s ease-in-out;
+}
+
+.store-badge:hover {
+  opacity: 0.8;
 }
 
 /* ================================== */
@@ -73,7 +92,6 @@ header {
 /* ================================== */
 
 #particles-js {
-  /* Use position: fixed to keep it locked to the viewport */
   position: fixed;
   width: 100%;
   height: 100%;

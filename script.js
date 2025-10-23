@@ -2,7 +2,7 @@ const allPrompts = document.querySelectorAll('.scroll-prompt');
 
 const observerOptions = {
   root: null,
-  threshold: 0.5,
+  threshold: 0.8,
 };
 
 allPrompts.forEach(prompt => {

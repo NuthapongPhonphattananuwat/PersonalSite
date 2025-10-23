@@ -16,28 +16,60 @@
 
   <link rel="stylesheet" href="./style.css" />
   <title>Nuthapong | Portfolio</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./Assets/Site-Icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Assets/Site-Icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./Assets/Site-Icons/favicon-16x16.png">
+  <link rel="manifest" href="./Assets/Site-Icons/site.webmanifest">
 </head>
 
 <body>
-  <div id="particles-js"></div>
+  <nav class="navbar navbar-expand-lg  fixed-top" data-bs-theme="dark">
+    <div class="container-fluid container-xxl-8">
+      <a class="navbar-brand font-domine" href="#home">Nuthapong P.</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <main>
-    <section id="home" class="full-section">
-      <div class="position-relative px-4 py-5 d-flex flex-column justify-content-center text-center vh-100">
+    <section id="home" class="section-hero px-4 py-5 text-center">
+      <div>
         <h2>Hi, I am</h2>
         <h1 class="py-2 text-body-emphasis">Nuthapong Pornphattananuwat</h1>
         <h2>A Unity Game Developer</h2>
-        <p class="lead py-4">I craft Engaging Player Experiences</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <a href="#about" class="btn btn-lg btn-light text-uppercase" role="button">
-            Portfolio
-          </a>
-          <a href="./Assets/Nuthapong_Resume.pdf" download="Nuthapong_Pornphattananuwat_Resume.pdf"
-            class="btn btn-lg btn-outline-light text-uppercase" role="button">
-            Download resume
-          </a>
+        <p class="lead py-4">I craft engaging player experiences</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="#projects" class="btn btn-lg btn-light text-uppercase">View My Work</a>
+          <a href="./Assets/pdf/nuthapong_cv.pdf" download class="btn btn-lg btn-outline-light text-uppercase">Download
+            CV</a>
         </div>
+
         <div class="scroll-prompt position-absolute bottom-0 start-0 end-0 pb-3 hover-animation">
-          <h4 class="text-uppercase">About me!</h4>
+          <h4 class="text-uppercase">About me !</h4>
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
             class="bi bi-arrow-down-circle mb-3" viewBox="0 0 16 16">
             <path fill-rule="evenodd"
@@ -47,115 +79,149 @@
       </div>
     </section>
 
-    <section id="about" class="full-section">
-      <div class="container col-xxl-8 px-4 py-5 d-flex flex-column justify-content-center">
-        <h2 class="visually-hidden">About Me</h2>
-
-        <div class="row flex-lg-row align-items-center justify-content-center g-5 py-5">
-          <div class="col-12 col-xl-3">
-            <img src="./Assets/Images/placeholder-image.png"
-              class="img-fluid object-fit-cover d-block mx-auto rounded profile-image-capped"
+    <section id="about" class="section-padding">
+      <div class="container col-xxl-8 px-4">
+        <div class="row align-items-center justify-content-center g-5">
+          <div class="col-12 col-md-5 col-xl-3 text-center">
+            <img src="./Assets/Images/profile-image-main.jpg"
+              class="img-fluid object-fit-cover rounded profile-image-capped"
               alt="Profile picture of Nuthapong Pornphattananuwat" loading="lazy" />
           </div>
-          <div class="col-12 col-xl-5">
-            <p class="text-center text-xl-start">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-              like Aldus PageMaker including versions of Lorem Ipsum.
+          <div class="col-12 col-md-7 col-xl-6">
+            <h2 class="text-body-emphasis mb-4 text-center text-md-start">Hello there, I'm Nuthapong (AJ)</h2>
+            <p class="lead text-center text-md-start">
+              I'm a Bangkok-based game developer with two years of experience. Driven by a childhood passion, I studied
+              game development in university. My mission is to create relaxing and enjoyable games that become great
+              memories for players, offering an escape from the stress of work or school. :D
             </p>
           </div>
         </div>
-
-        <div class="row flex-lg-row justify-content-center g-5 py-5">
-          <div class="col-12 col-xl-3">
-            <h2 class="text-body-emphasis text-uppercase">Skills</h2>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Unity Game Engine</li>
-              <li class="list-group-item">C# Programming Language</li>
-              <li class="list-group-item">Morbi leo risus</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-          </div>
-
-          <div class="col-12 col-xl-7">
-            <div class="pb-4 text-center text-xl-start">
-              <h2 class="text-body-emphasis">Highlighted Projects</h2>
-            </div>
-
-            <article class="row flex-lg-row pb-3">
-              <div class="col-4">
-                <img src="./Assets/Images/placeholder-image.png"
-                  class="img-fluid object-fit-cover d-block mx-auto rounded profile-image-capped"
-                  alt="Project Name screenshot" loading="lazy" />
-              </div>
-
-              <div class="col-8">
-                <h5 class="text-body-emphasis text-start">Project Name</h5>
-                <p class="text-center text-xl-start">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                  into
-                  electronic typesetting, remaining essentially unchanged.
-                </p>
-              </div>
-            </article>
-
-            <article class="row flex-lg-row pb-3">
-              <div class="col-4">
-                <img src="./Assets/Images/placeholder-image.png"
-                  class="img-fluid object-fit-cover d-block mx-auto rounded profile-image-capped"
-                  alt="Project Name screenshot" loading="lazy" />
-              </div>
-
-              <div class="col-8">
-                <h5 class="text-body-emphasis text-start">Project Name</h5>
-                <p class="text-center text-xl-start">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                  into
-                  electronic typesetting, remaining essentially unchanged.
-                </p>
-              </div>
-            </article>
-
-            <article class="row flex-lg-row pb-3">
-              <div class="col-4">
-                <img src="./Assets/Images/placeholder-image.png"
-                  class="img-fluid object-fit-cover d-block mx-auto rounded profile-image-capped"
-                  alt="Project Name screenshot" loading="lazy" />
-              </div>
-
-              <div class="col-8">
-                <h5 class="text-body-emphasis text-start">Project Name</h5>
-                <p class="text-center text-xl-start">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                  into
-                  electronic typesetting, remaining essentially unchanged.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-
       </div>
     </section>
 
-    <section id="contact" class="full-section">
-      
+    <section id="skills" class="section-padding ">
+      <div class="container col-lg-8 px-4 text-center">
+        <h2 class="text-body-emphasis text-uppercase mb-5">My Toolkit</h2>
+
+        <div class="d-flex flex-wrap justify-content-center gap-3 fs-5">
+          <span class="badge rounded-pill text-bg-secondary fw-normal">C# Programming & OOP</span>
+          <span class="badge rounded-pill text-bg-secondary fw-normal">Unity Game Engine (2D & 3D)</span>
+          <span class="badge rounded-pill text-bg-secondary fw-normal">Version Control (Git)</span>
+          <span class="badge rounded-pill text-bg-secondary fw-normal">API Integration</span>
+          <span class="badge rounded-pill text-bg-secondary fw-normal">Multiplayer Systems</span>
+          <span class="badge rounded-pill text-bg-secondary fw-normal">Unity Animation & UI</span>
+        </div>
+      </div>
     </section>
+
+
+    <section id="projects" class="section-padding">
+      <div class="container col-xxl-8 px-4">
+        <div class="text-center mb-5 pb-4">
+          <h2 class="text-body-emphasis text-uppercase">Highlighted Projects</h2>
+        </div>
+
+        <div class="d-flex flex-column gap-5">
+
+          <article class="row align-items-center g-5">
+            <div class="col-md-4">
+              <div class="ratio ratio-1x1">
+                <img src="./Assets/Images/quantumwars_logo.jpg" class="object-fit-cover rounded"
+                  alt="Quantum Wars project preview" loading="lazy">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <h3 class="text-body-emphasis">Quantum Wars</h3>
+              <p class="text-muted fs-5 mb-3">Junior Frontend Game Developer at Adisoft Gaming</p>
+              <p>
+                <strong>Quantum Wars</strong> is a free-to-play mobile digital board game combining strategy and
+                multiplayer action. Achievers enjoy gaining points, levels, equipment and other concrete measurements of
+                succeeding in a game. And enjoy thinking and planning about the strategy of the game.
+              </p>
+
+              <div class="d-flex justify-content-start gap-3">
+                <a href="https://play.google.com/store/apps/details?id=io.adisoft.quantumwars" target="_blank"
+                  rel="noopener noreferrer">
+                  <img src="./Assets/Images/google_play.svg" alt="Get it on Google Play" class="store-badge">
+                </a>
+                <a href="https://apps.apple.com/th/app/quantum-wars/id6736969806" target="_blank"
+                  rel="noopener noreferrer">
+                  <img src="./Assets/Images/app_store.svg" alt="Get it on App Store" class="store-badge">
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <hr class="my-4">
+
+          <article class="row align-items-center g-5 flex-row-reverse">
+            <div class="col-md-4">
+              <div class="ratio ratio-1x1">
+                <img src="./Assets/Images/bitcube_logo.png" class="object-fit-cover rounded"
+                  alt="BitCube project preview" loading="lazy">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <h3 class="text-body-emphasis">BitCube</h3>
+              <p class="text-muted fs-5 mb-3">Final Project at Bangkok University</p>
+              <p>
+                <strong>BitCube</strong> is a fast-paced 3D action game set in a vibrant digital world. Players take
+                on the role of a virus program, navigating each level to collect scattered
+                computer chips and deliver them to the central base. Meanwhile, waves of morphing cube-shaped virus
+                enemies challenge the player’s speed and strategy, creating an intense and engaging gameplay
+                experience.
+              </p>
+
+              <div class="d-flex justify-content-start gap-2">
+                <a href="#" class="btn btn-light">More Detail</a>
+                <a href="https://drive.google.com/file/d/1in9Bw80V7laVPfFActzA39XkkUsXtxIV/view?pli=1" target="_blank"
+                  class="btn btn-outline-light">Individual Portfolio</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="py-5 ">
+      <div class="container text-center">
+        <h3 class="text-body-emphasis mb-3">Get In Touch</h3>
+        <p class="lead mb-4">I'm passionate about game development and always happy to connect with other professionals.
+        </p>
+
+        <a href="mailto:nuthapong.phon@hotmail.com" class="btn btn-lg btn-light mb-5">
+          nuthapong.phon@hotmail.com
+        </a>
+
+        <div class="d-flex justify-content-center gap-4">
+          <a href="https://www.linkedin.com/in/nuthapong-pornphattananuwat-b597152a6" target="_blank"
+            class="link-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg>
+          </a>
+          <a href="https://github.com/NuthapongPhonphattananuwat" target="_blank" class="link-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+          </a>
+        </div>
+
+        <p class="text-muted mt-5 mb-0">&copy; 2025 Nuthapong Pornphattananuwat</p>
+      </div>
+    </footer>
+
   </main>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
   <script src="./script.js"></script>
 </body>
 
