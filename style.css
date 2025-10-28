@@ -128,6 +128,75 @@ h6,
 }
 
 /* ================================== */
+/* Carousel Arrow Click Area Adjustment
+/* ================================== */
+
+/* Make the parent containers non-clickable */
+.carousel-control-prev,
+.carousel-control-next {
+  pointer-events: none;
+  /* Reset background and width if they interfere */
+  background: none;
+  width: auto; /* Let the icon define the size */
+}
+
+/* Make ONLY the icons clickable and give them feedback */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  pointer-events: auto; /* Enable clicks on the icon */
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3); /* Optional: Subtle background */
+  border-radius: 100%;
+  padding: 0.5rem;
+  transition: background-color 0.15s ease;
+}
+
+/* Optional: Darken background on hover for visual feedback */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* ================================== */
+/* Carousel Image Fit Adjustment
+/* ================================== */
+
+/* Target ONLY images within carousel items */
+#portfolio-main .carousel-item img {
+  object-fit: contain !important; /* Make sure the whole image is visible */
+  height: 100%;
+  width: 100%;
+  /* Optional: Add a background color to the container if needed */
+  /* background-color: #000; */ /* Example: Black background for letterboxing */
+}
+
+/* Ensure video and iframe still cover */
+#portfolio-main .carousel-item video,
+#portfolio-main .carousel-item iframe {
+  object-fit: cover; /* Keep videos covering */
+  height: 100%;
+  width: 100%;
+}
+
+/* Ensure the ratio div itself has a background for letterboxing */
+#portfolio-main .carousel-item .ratio {
+  background-color: #212529; /* Dark background for letterbox area */
+}
+
+/* ================================== */
+/* Carousel Background
+/* ================================== */
+
+.carousel-bg-dark {
+  background-color: #000000; /* Black background */
+}
+
+/* Also apply to the video container if separate */
+#portfolio-main .ratio video {
+  background-color: #000000;
+}
+
+/* ================================== */
 /* Media Queries (Large Screens)
 /* ================================== */
 
