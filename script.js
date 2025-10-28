@@ -24,3 +24,24 @@ allPrompts.forEach(prompt => {
 
   observer.observe(parentSection);
 });
+
+
+const allSections = document.querySelectorAll('.fade-in-section');
+const sectionObserverOptions = {
+  root: null,
+  threshold: 0.15, // Trigger when 15% of the section is visible
+  rootMargin: "0px 0px -50px 0px" // Start loading a little before it's fully in view
+};
+
+const sectionObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target); // Stop observing once it's visible
+    }
+  });
+}, sectionObserverOptions);
+
+allSections.forEach(section => {
+  sectionObserver.observe(section);
+});

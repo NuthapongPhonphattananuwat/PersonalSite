@@ -24,6 +24,7 @@
 </head>
 
 <body>
+  <div id="particles-js"></div>
   <nav class="navbar navbar-expand-lg  fixed-top" data-bs-theme="dark">
     <div class="container-fluid container-xxl-8">
       <a class="navbar-brand font-domine" href="#home">Nuthapong P.</a>
@@ -79,7 +80,7 @@
       </div>
     </section>
 
-    <section id="about" class="section-padding">
+    <section id="about" class="section-padding fade-in-section">
       <div class="container col-xxl-8 px-4">
         <div class="row align-items-center justify-content-center g-5">
           <div class="col-12 col-md-5 col-xl-3 text-center">
@@ -99,23 +100,55 @@
       </div>
     </section>
 
-    <section id="skills" class="section-padding ">
+    <section id="skills" class="section-padding fade-in-section">
       <div class="container col-lg-8 px-4 text-center">
-        <h2 class="text-body-emphasis text-uppercase mb-5">My Toolkit</h2>
+        <h2 class="text-body-emphasis text-uppercase mb-5 pb-3">My Toolkit</h2>
 
-        <div class="d-flex flex-wrap justify-content-center gap-3 fs-5">
-          <span class="badge rounded-pill text-bg-secondary fw-normal">C# Programming & OOP</span>
-          <span class="badge rounded-pill text-bg-secondary fw-normal">Unity Game Engine (2D & 3D)</span>
-          <span class="badge rounded-pill text-bg-secondary fw-normal">Version Control (Git)</span>
-          <span class="badge rounded-pill text-bg-secondary fw-normal">API Integration</span>
-          <span class="badge rounded-pill text-bg-secondary fw-normal">Multiplayer Systems</span>
-          <span class="badge rounded-pill text-bg-secondary fw-normal">Unity Animation & UI</span>
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="skill-card h-100 p-4 rounded-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                class="bi bi-filetype-cs mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.293.793a.5.5 0 0 0 0 .708L6.414 7.5l-1.707 1.707a.5.5 0 0 0 .708.708L7.828 7.5 5.414 5.086a.5.5 0 0 0-.708 0Z" />
+                <path d="M11.354 7.354a.5.5 0 0 0 0 .708l-2 2a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0-.708-.708Z" />
+              </svg>
+              <h4 class="fs-5">C# Programming</h4>
+              <p class="text-muted mb-0">Deep understanding of OOP and efficient coding practices.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="skill-card h-100 p-4 rounded-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                class="bi bi-unity mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M12.094 11.237c.303-.13.488-.42.488-.738V5.498c0-.317-.185-.607-.488-.738l-3.488-1.55a.83.83 0 0 0-.811 0L4.307 4.76c-.303.13-.488.42-.488.738v5.003c0 .317.185.607.488.738l3.488 1.55a.83.83 0 0 0 .811 0l3.488-1.55Zm-3.79 1.1L5.05 10.939 8 9.55l2.95 1.39-3.204 1.427ZM4.307 5.498l3.197-1.421 3.204 1.421L8 6.891 4.307 5.498ZM3.748 6.8l3.354 1.49v2.798L3.748 9.59V6.8Zm4.901 4.288V8.29L12.002 6.8v2.79L8.649 11.09Z" />
+              </svg>
+              <h4 class="fs-5">Unity Engine</h4>
+              <p class="text-muted mb-0">
+                Developing for 2D/3D & mobile, API integration, multiplayer systems, and bug fixing.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="skill-card h-100 p-4 rounded-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-git mb-3"
+                viewBox="0 0 16 16">
+                <path
+                  d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.44 1.44-.964-.964a1.03 1.03 0 0 0-1.457 0L.302 7.287a1.03 1.03 0 0 0 0 1.457l3.081 3.081-1.44 1.44a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l1.44-1.44.964.964a1.03 1.03 0 0 0 1.457 0l3.081-3.081a1.03 1.03 0 0 0 0-1.457l-3.081-3.081 1.44-1.44a1.03 1.03 0 0 0 0-1.457zM8 1.732l6.267 6.267-2.83 2.829h-1.9L8 8.242l-1.536 1.536V11H5.405L2.575 8.17l5.425-5.425zm.354 1.428L5.17 6.345v1.31l2.057 2.057a.5.5 0 0 0 .708 0l2.057-2.057v-1.31L8.354 3.16zM8 12.242l1.536-1.536V9.09H11l2.83 2.829L8 14.828l-5.425-5.425 2.83-2.829h1.06v1.616L8 12.242z" />
+              </svg>
+              <h4 class="fs-5">Version Control</h4>
+              <p class="text-muted mb-0">Proficient with version control using GitHub, and clients like Fork.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
 
-    <section id="projects" class="section-padding">
+    <section id="projects" class="section-padding fade-in-section">
       <div class="container col-xxl-8 px-4">
         <div class="text-center mb-5 pb-4">
           <h2 class="text-body-emphasis text-uppercase">Highlighted Projects</h2>
@@ -123,61 +156,67 @@
 
         <div class="d-flex flex-column gap-5">
 
-          <article class="row align-items-center g-5">
-            <div class="col-md-4">
-              <div class="ratio ratio-1x1">
-                <img src="./Assets/Images/quantumwars_logo.jpg" class="object-fit-cover rounded"
-                  alt="Quantum Wars project preview" loading="lazy">
+          <article class="card project-card shadow-sm border-0">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./Assets/Projects/QuantumWars/quantumwars_logo.jpg"
+                  class="img-fluid rounded-start project-card-img" alt="Quantum Wars project preview">
               </div>
-            </div>
-            <div class="col-md-8">
-              <h3 class="text-body-emphasis">Quantum Wars</h3>
-              <p class="text-muted fs-5 mb-3">Junior Frontend Game Developer at Adisoft Gaming</p>
-              <p>
-                <strong>Quantum Wars</strong> is a free-to-play mobile digital board game combining strategy and
-                multiplayer action. Achievers enjoy gaining points, levels, equipment and other concrete measurements of
-                succeeding in a game. And enjoy thinking and planning about the strategy of the game.
-              </p>
+              <div class="col-md-7">
+                <div class="card-body p-4 p-md-5">
+                  <h3 class="card-title text-body-emphasis">Quantum Wars</h3>
+                  <p class="text-muted fs-5 mb-3">Junior Frontend Game Developer at Adisoft Gaming</p>
+                  <p>
+                    <strong>Quantum Wars</strong> is a free-to-play mobile digital board game combining strategy and
+                    multiplayer action. Achievers enjoy gaining points, levels, equipment and other concrete
+                    measurements of
+                    succeeding in a game.
+                  </p>
 
-              <div class="d-flex justify-content-start gap-3">
-                <a href="https://play.google.com/store/apps/details?id=io.adisoft.quantumwars" target="_blank"
-                  rel="noopener noreferrer">
-                  <img src="./Assets/Images/google_play.svg" alt="Get it on Google Play" class="store-badge">
-                </a>
-                <a href="https://apps.apple.com/th/app/quantum-wars/id6736969806" target="_blank"
-                  rel="noopener noreferrer">
-                  <img src="./Assets/Images/app_store.svg" alt="Get it on App Store" class="store-badge">
-                </a>
+                  <div class="d-flex justify-content-start gap-3">
+                    <a href="./portfolio.html#projectQuantumWars" target="_blank" class="btn btn-light">More Detail</a>
+                    <a href="https://play.google.com/store/apps/details?id=io.adisoft.quantumwars" target="_blank"
+                      rel="noopener noreferrer">
+                      <img src="./Assets/Images/google_play.svg"
+                        onerror="this.src='./Assets/Images/placeholder-image.png'" alt="Get it on Google Play"
+                        class="store-badge">
+                    </a>
+                    <a href="https://apps.apple.com/th/app/quantum-wars/id6736969806" target="_blank"
+                      rel="noopener noreferrer">
+                      <img src="./Assets/Images/app_store.svg"
+                        onerror="this.src='./Assets/Images/placeholder-image.png'" alt="Get it on App Store"
+                        class="store-badge">
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </article>
 
-          <hr class="my-4">
 
-          <article class="row align-items-center g-5 flex-row-reverse">
-            <div class="col-md-4">
-              <div class="ratio ratio-1x1">
-                <img src="./Assets/Images/bitcube_logo.png" class="object-fit-cover rounded"
-                  alt="BitCube project preview" loading="lazy">
+          <article class="card project-card shadow-sm border-0">
+            <div class="row g-0 flex-md-row-reverse">
+              <div class="col-md-5">
+                <img src="./Assets/Projects/BitCube/bitcube_logo.png" class="img-fluid rounded-end project-card-img"
+                  alt="BitCube project preview">
               </div>
-            </div>
-            <div class="col-md-8">
-              <h3 class="text-body-emphasis">BitCube</h3>
-              <p class="text-muted fs-5 mb-3">Final Project at Bangkok University</p>
-              <p>
-                <strong>BitCube</strong> is a fast-paced 3D action game set in a vibrant digital world. Players take
-                on the role of a virus program, navigating each level to collect scattered
-                computer chips and deliver them to the central base. Meanwhile, waves of morphing cube-shaped virus
-                enemies challenge the player’s speed and strategy, creating an intense and engaging gameplay
-                experience.
-              </p>
+              <div class="col-md-7">
+                <div class="card-body p-4 p-md-5">
+                  <h3 class="card-title text-body-emphasis">BitCube</h3>
+                  <p class="text-muted fs-5 mb-3">Final Project at Bangkok University</p>
+                  <p>
+                    <strong>BitCube</strong> is a fast-paced 3D action game set in a vibrant digital world. Players take
+                    on the role of a virus program, navigating each level to collect scattered
+                    computer chips and deliver them to the central base.
+                  </p>
 
-              <div class="d-flex justify-content-start gap-2">
-                <a href="#" class="btn btn-light">More Detail</a>
-                <a href="https://drive.google.com/file/d/1in9Bw80V7laVPfFActzA39XkkUsXtxIV/view?pli=1" target="_blank"
-                  class="btn btn-outline-light">Individual Portfolio</a>
+                  <div class="d-flex justify-content-start gap-2">
+                    <a href="./portfolio.html#projectBitCube" target="_blank" class="btn btn-light">More Detail</a>
+                    <a href="https://drive.google.com/file/d/1in9Bw80V7laVPfFActzA39XkkUsXtxIV/view?pli=1"
+                      target="_blank" class="btn btn-light">Individual Portfolio</a>
+                  </div>
+                </div>
               </div>
-            </div>
           </article>
 
         </div>
@@ -223,6 +262,12 @@
     crossorigin="anonymous"></script>
 
   <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'assets/particles.json', function () {
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
 </body>
 
 </html>
