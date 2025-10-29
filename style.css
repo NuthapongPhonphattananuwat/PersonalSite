@@ -56,7 +56,6 @@ h6,
 /* ================================== */
 
 .profile-image-capped {
-  max-height: 400px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
