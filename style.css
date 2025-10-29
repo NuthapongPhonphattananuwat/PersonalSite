@@ -56,7 +56,6 @@ h6,
 /* ================================== */
 
 .profile-image-capped {
-  max-width: 400px;
   max-height: 400px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
@@ -100,8 +99,8 @@ h6,
 }
 
 .project-card {
-  background-color: transparent; /* Make card background transparent */
-  border: 1px solid rgba(255, 255, 255, 0.1) !important; /* Override Bootstrap border */
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
   transition: all 0.3s ease-in-out;
 }
 
@@ -173,27 +172,23 @@ h6,
 /* Carousel Arrow Click Area Adjustment
 /* ================================== */
 
-/* Make the parent containers non-clickable */
 .carousel-control-prev,
 .carousel-control-next {
   pointer-events: none;
-  /* Reset background and width if they interfere */
   background: none;
-  width: auto; /* Let the icon define the size */
+  width: auto;
 }
 
-/* Make ONLY the icons clickable and give them feedback */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  pointer-events: auto; /* Enable clicks on the icon */
+  pointer-events: auto;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.3); /* Optional: Subtle background */
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 100%;
   padding: 0.5rem;
   transition: background-color 0.15s ease;
 }
 
-/* Optional: Darken background on hover for visual feedback */
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
   background-color: rgba(0, 0, 0, 0.6);
@@ -203,26 +198,21 @@ h6,
 /* Carousel Image Fit Adjustment
 /* ================================== */
 
-/* Target ONLY images within carousel items */
 #portfolio-main .carousel-item img {
-  object-fit: contain !important; /* Make sure the whole image is visible */
+  object-fit: contain !important;
   height: 100%;
   width: 100%;
-  /* Optional: Add a background color to the container if needed */
-  /* background-color: #000; */ /* Example: Black background for letterboxing */
 }
 
-/* Ensure video and iframe still cover */
 #portfolio-main .carousel-item video,
 #portfolio-main .carousel-item iframe {
-  object-fit: cover; /* Keep videos covering */
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
-/* Ensure the ratio div itself has a background for letterboxing */
 #portfolio-main .carousel-item .ratio {
-  background-color: #212529; /* Dark background for letterbox area */
+  background-color: #212529;
 }
 
 /* ================================== */
@@ -230,10 +220,9 @@ h6,
 /* ================================== */
 
 .carousel-bg-dark {
-  background-color: #000000; /* Black background */
+  background-color: #000000;
 }
 
-/* Also apply to the video container if separate */
 #portfolio-main .ratio video {
   background-color: #000000;
 }
@@ -245,7 +234,7 @@ h6,
 .tech-stack-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem; /* 12px */
+  gap: 0.75rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   padding: 0;
@@ -260,11 +249,10 @@ h6,
   font-weight: 600;
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 2rem; /* Pill shape */
+  border-radius: 2rem;
   color: var(--bs-body-color); 
 }
 
-/* Style for the SVG icon inside the pill */
 .tech-stack-item svg {
   width: 1.1em;
   height: 1.1em;
@@ -282,6 +270,5 @@ h6,
     max-width: 100%;
     max-height: none;
     aspect-ratio: 3 / 4;
-    /* object-fit: cover; is already set in the base rule */
   }
 }
