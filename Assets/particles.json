@@ -3,7 +3,7 @@
     "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
     "color": { "value": "#ffffff" },
     "shape": { "type": "circle" },
-    "opacity": { "value": 0.5, "random": false, "anim": { "enable": false } },
+    "opacity": { "value": 1, "random": false, "anim": { "enable": false } },
     "size": { "value": 3, "random": true, "anim": { "enable": false } },
     "line_linked": {
       "enable": true,
@@ -14,7 +14,7 @@
     },
     "move": {
       "enable": true,
-      "speed": 2,
+      "speed": 0.5,
       "direction": "none",
       "random": false,
       "straight": false,

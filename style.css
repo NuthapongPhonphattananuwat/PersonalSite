@@ -239,6 +239,41 @@ h6,
 }
 
 /* ================================== */
+/* Tech Stack List
+/* ================================== */
+
+.tech-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem; /* 12px */
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  list-style: none; 
+}
+
+.tech-stack-item {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2rem; /* Pill shape */
+  color: var(--bs-body-color); 
+}
+
+/* Style for the SVG icon inside the pill */
+.tech-stack-item svg {
+  width: 1.1em;
+  height: 1.1em;
+  margin-right: 0.5em;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+/* ================================== */
 /* Media Queries (Large Screens)
 /* ================================== */
 
